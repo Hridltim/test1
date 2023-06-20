@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'java --version'
+         bat "java --version"
       }
     }
     stage('hello') {
       steps {
-        sh 'java myjava1.java'
+        bat "java myjava1.java"
       }
     }
   }
